@@ -81,6 +81,11 @@
     <p style="margin-bottom:0" id="next-3"></p>
   </div>
 
+  <h2>Run it on the command line or in CI</h2>
+  <p>The same check, open source under the MIT licence, with no dependencies. From your project folder, with Node 18 or later:</p>
+  <p><code>npx github:Counterroll/x402-check .</code></p>
+  <p class="muted">It exits with code 1 when something needs fixing, so it can fail a build. Code and instructions: <a href="https://github.com/Counterroll/x402-check" rel="noopener noreferrer">github.com/Counterroll/x402-check</a>.</p>
+
   <h2>What it checks</h2>
   <ul>
     <li><b>Out-of-date x402 packages</b> with flaws reported in October 2026, including transitive ones in your lockfile. For example, <code>@x402/fetch</code> and <code>@x402/axios</code> before 2.23.0 had no default spending limit, and <code>@x402/core</code> is fixed in 2.27.0.</li>
