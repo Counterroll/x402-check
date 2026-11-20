@@ -1,0 +1,38 @@
+{
+  "name": "@counterroll/x402-check",
+  "version": "0.1.0",
+  "description": "Free, offline check of an x402 project for SDK versions with publicly reported flaws and for settings that turn the default spending limit off.",
+  "type": "module",
+  "bin": {
+    "x402-check": "bin/x402-check.mjs"
+  },
+  "exports": {
+    ".": "./src/engine.mjs",
+    "./report": "./src/report.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "keywords": [
+    "x402",
+    "agent-payments",
+    "spend-controls",
+    "security"
+  ],
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Counterroll/x402-check.git"
+  },
+  "homepage": "https://github.com/Counterroll/x402-check#readme"
+}
